@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Work From Home Trading Executive Recruitment">
+
+    <meta name="theme-color" content="#087f52">
+
+    <title>Trading Executive | Work From Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, "Noto Sans Devanagari", sans-serif;
+            background: #f5f8f6;
+            color: #14231d;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid #e5ebe8;
+        }
+
+        .nav-container {
+            width: 100%;
+            max-width: 1180px;
+            margin: auto;
+            padding: 15px 22px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            color: #111111;
+        }
+
+        .logo span {
+            color: #08a66a;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #26362f;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .nav-apply {
+            background: #08a66a;
+            color: #ffffff !important;
+            padding: 10px 18px;
+            border-radius: 9px;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background:
+                radial-gradient(
+                    circle at 85% 15%,
+                    rgba(40, 220, 150, 0.28),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #041a11 0%,
+                    #087c50 100%
+                );
+
+            color: #ffffff;
+        }
+
+        .hero-container {
+            max-width: 1180px;
+            margin: auto;
+            padding: 80px 22px 100px;
+
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .india-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.10);
+            border-radius: 30px;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .hero h1 {
+            margin-top: 22px;
+            margin-bottom: 18px;
+
+            font-size: 55px;
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+        }
+
+        .hero-text {
+            max-width: 720px;
+
+            color: #e2f0ea;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 25px;
+
+            background: #ffd43b;
+            color: #152018;
+
+            padding: 15px 25px;
+            border-radius: 10px;
+
+            font-size: 16px;
+            font-weight: 900;
+
+            transition: 0.2s ease;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           TRADING CARD
+        ========================= */
+
+        .trading-card {
+            padding: 20px;
+
+            border-radius: 22px;
+
+            background: rgba(255,255,255,0.09);
+            border: 1px solid rgba(255,255,255,0.20);
+        }
+
+        .trading-screen {
+            padding: 22px;
+
+            background: #071a13;
+            border-radius: 16px;
+        }
+
+        .screen-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 20px;
+        }
+
+        .screen-title {
+            font-size: 19px;
+            font-weight: 800;
+        }
+
+        .live {
+            font-size: 12px;
+            color: #42dda0;
+        }
+
+        .chart {
+            position: relative;
+
+            height: 180px;
+
+            overflow: hidden;
+
+            border-radius: 10px;
+
+            background:
+                repeating-linear-gradient(
+                    0deg,
+                    transparent 0,
+                    transparent 35px,
+                    rgba(255,255,255,0.06) 36px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent 0,
+                    transparent 44px,
+                    rgba(255,255,255,0.06) 45px
+                );
+        }
+
+        .chart-line {
+            position: absolute;
+
+            left: 4%;
+            right: 5%;
+            top: 65%;
+
+            height: 3px;
+
+            background: #38d99a;
+
+            transform:
+                rotate(-8deg)
+                skewX(-10deg);
+        }
+
+        .chart-dot {
+            position: absolute;
+
+            width: 10px;
+            height: 10px;
+
+            border-radius: 50%;
+
+            background: #ffd43b;
+
+            right: 9%;
+            top: 30%;
+        }
+
+        .trade-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 20px;
+
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+            position: relative;
+            z-index: 5;
+
+            width: 100%;
+            max-width: 1180px;
+
+            margin: -38px auto 0;
+            padding: 0 22px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .stat {
+            background: #ffffff;
+
+            padding: 22px;
+
+            border-radius: 16px;
+
+            box-shadow:
+                0 10px 30px rgba(10, 50, 32, 0.10);
+        }
+
+        .stat strong {
+            display: block;
+
+            margin-bottom: 4px;
+
+            font-size: 26px;
+            color: #09271b;
+        }
+
+        .stat span {
+            color: #65756e;
+            font-size: 14px;
+        }
+
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        .section {
+            padding: 75px 22px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        .section-heading {
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 10px;
+
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        .section-heading p {
+            color: #66766f;
+            font-size: 17px;
+        }
+
+        /* =========================
+           CARDS
+        ========================= */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: #ffffff;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 8px 28px rgba(10, 50, 32, 0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 16px;
+
+            font-size: 22px;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            padding: 12px 0;
+
+            border-bottom: 1px solid #e8eeeb;
+
+            color: #4f6158;
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .card li::before {
+            content: "✓";
+
+            display: inline-block;
+
+            margin-right: 10px;
+
+            color: #08a66a;
+            font-weight: 900;
+        }
+
+        /* =========================
+           HIGHLIGHT
+        ========================= */
+
+        .highlight {
+            margin-top: 25px;
+
+            padding: 22px;
+
+            border-radius: 15px;
+
+            background: #eaf7f1;
+
+            border: 1px solid #d5eee2;
+        }
+
+        .highlight strong {
+            color: #087b50;
+        }
+
+        /* =========================
+           APPLICATION
+        ========================= */
+
+        .application-section {
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+
+        .application-box {
+            background: #ffffff;
+
+            padding: 30px;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 12px 38px rgba(10, 50, 32, 0.10);
+        }
+
+        .application-box h2 {
+            margin-bottom: 8px;
+
+            font-size: 36px;
+        }
+
+        .application-box > p {
+            margin-bottom: 25px;
+
+            color: #65756e;
+        }
+
+        /* =========================
+           JOTFORM
+        ========================= */
+
+        .form-wrapper {
+            width: 100%;
+
+            overflow: hidden;
+
+            border-radius: 15px;
+
+            background: #ffffff;
+        }
+
+        .jotform-frame {
+            display: block;
+
+            width: 100%;
+
+            min-height: 950px;
+
+            border: none;
+
+            background: #ffffff;
+        }
+
+        /* =========================
+           SECURITY BOX
+        ========================= */
+
+        .security-box {
+            margin-top: 20px;
+
+            padding: 16px 18px;
+
+            border-radius: 12px;
+
+            background: #f2f7f4;
+
+            color: #596b62;
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 35px 20px;
+
+            background: #061a12;
+
+            color: #d4e2dc;
+
+            text-align: center;
+
+            font-size: 13px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .trading-card {
+                max-width: 600px;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .nav-container {
+                padding: 13px 16px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                gap: 8px;
+            }
+
+            .nav-links a:not(.nav-apply) {
+                display: none;
+            }
+
+            .nav-apply {
+                padding: 9px 13px;
+                font-size: 13px;
+            }
+
+            .hero-container {
+                padding:
+                    55px 18px
+                    70px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+                letter-spacing: -0.8px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .trading-card {
+                display: none;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+                padding: 0 18px;
+            }
+
+            .section {
+                padding: 55px 18px;
+            }
+
+            .section-heading h2 {
+                font-size: 30px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+
+            .application-box {
+                padding: 18px;
+            }
+
+            .application-box h2 {
+                font-size: 29px;
+            }
+
+            .jotform-frame {
+                min-height: 1100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                dhan <span>धन</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#job">
+                    नौकरी
+                </a>
+
+                <a href="#details">
+                    जानकारी
+                </a>
+
+                <a href="#apply" class="nav-apply">
+                    आवेदन करें
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <header class="hero">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <span class="india-badge">
+                    🇮🇳 केवल भारत के उम्मीदवारों के लिए
+                </span>
+
+                <h1>
+                    घर से काम करें।<br>
+                    Trading Executive बनें।
+                </h1>
+
+                <p class="hero-text">
+                    Work From Home Trading Executive की भूमिका के लिए
+                    जिम्मेदार और अनुशासित उम्मीदवारों की आवश्यकता है।
+                    टीम द्वारा दिए गए trading instructions के अनुसार
+                    Dhan ऐप पर Buy/Sell orders execute करने का काम होगा।
+                </p>
+
+                <a href="#apply" class="hero-button">
+                    अभी आवेदन करें →
+                </a>
+
+            </div>
+
+
+            <div class="trading-card">
+
+                <div class="trading-screen">
+
+                    <div class="screen-header">
+
+                        <div class="screen-title">
+                            Trading Workspace
+                        </div>
+
+                        <div class="live">
+                            ● WORK FROM HOME
+                        </div>
+
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="chart-line"></div>
+
+                        <div class="chart-dot"></div>
+
+                    </div>
+
+                    <div class="trade-bottom">
+
+                        <span>
+                            BUY / SELL
+                        </span>
+
+                        <span>
+                            ₹60 / Hour
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         STATS
+    ========================= -->
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <strong>
+                ₹60
+            </strong>
+
+            <span>
+                प्रति घंटा वेतन
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                9:30 AM
+            </strong>
+
+            <span>
+                नियमित काम शुरू
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                4:00 PM
+            </strong>
+
+            <span>
+                नियमित समय समाप्त
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                शनि–रवि
+            </strong>
+
+            <span>
+                साप्ताहिक छुट्टी
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JOB SECTION
+    ========================= -->
+
+    <section class="section" id="job">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    नौकरी के बारे में
+                </h2>
+
+                <p>
+                    घर से काम करते हुए दिए गए trading instructions
+                    के अनुसार निर्धारित कार्य को समय पर पूरा करना।
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        💼 मुख्य जिम्मेदारियाँ
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            टीम द्वारा दिए गए trading instructions
+                            को ध्यान से follow करना।
+                        </li>
+
+                        <li>
+                            Dhan ऐप पर बताए गए Buy/Sell orders
+                            को execute करना।
+                        </li>
+
+                        <li>
+                            निर्देश मिलने पर position को
+                            निर्धारित समय पर close करना।
+                        </li>
+
+                        <li>
+                            काम के दौरान समय की पाबंदी और
+                            अनुशासन बनाए रखना।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        ⏰ Working Hours
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            नियमित समय:
+                            <b>9:30 AM – 4:00 PM</b>
+                        </li>
+
+                        <li>
+                            Optional overtime:
+                            <b>4:00 PM – 11:00 PM</b>
+                        </li>
+
+                        <li>
+                            Saturday और Sunday:
+                            <b>छुट्टी</b>
+                        </li>
+
+                        <li>
+                            वेतन:
+                            <b>₹60 प्रति घंटा</b>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DETAILS
+    ========================= -->
+
+    <section class="section" id="details">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    उम्मीदवार के लिए जरूरी बातें
+                </h2>
+
+                <p>
+                    आवेदन करने से पहले नीचे दी गई eligibility और
+                    security information जरूर पढ़ें।
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        ✅ Eligibility
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            भारत में रहने वाला उम्मीदवार।
+                        </li>
+
+                        <li>
+                            आयु 18 वर्ष या उससे अधिक।
+                        </li>
+
+                        <li>
+                            Smartphone या Laptop उपलब्ध होना चाहिए।
+                        </li>
+
+                        <li>
+                            विश्वसनीय Internet connection होना चाहिए।
+                        </li>
+
+                        <li>
+                            दिए गए instructions को ध्यान से follow
+                            करने की क्षमता।
+                        </li>
+
+                        <li>
+                            Trading experience हो तो अच्छा है,
+                            लेकिन आवश्यक नहीं।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        🔐 Security
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            अपना OTP किसी के साथ share न करें।
+                        </li>
+
+                        <li>
+                            अपना UPI PIN share न करें।
+                        </li>
+
+                        <li>
+                            Bank card details share न करें।
+                        </li>
+
+                        <li>
+                            Dhan password या login details share न करें।
+                        </li>
+
+                        <li>
+                            किसी अनजान व्यक्ति को पैसे न भेजें।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <strong>
+                    महत्वपूर्ण:
+                </strong>
+
+                यह एक recruitment opportunity है।
+                किसी भी निश्चित trading profit या investment
+                return की guarantee नहीं दी जा रही है।
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         APPLICATION
+    ========================= -->
+
+    <section class="section application-section" id="apply">
+
+        <div class="container">
+
+            <div class="application-box">
+
+                <h2>
+                    📝 नौकरी के लिए आवेदन करें
+                </h2>
+
+                <p>
+                    नीचे दिया गया form इसी website के अंदर है।
+                    अपनी सही जानकारी भरकर आवेदन submit करें।
+                </p>
+
+
+                <!-- JOTFORM EMBED -->
+
+                <div class="form-wrapper">
+
+                    <iframe
+                        class="jotform-frame"
+                        src="https://form.jotform.com/262544472909061"
+                        title="Trading Executive Job Application Form"
+                        loading="lazy"
+                        allow="camera; microphone">
+
+                    </iframe>
+
+                </div>
+
+
+                <div class="security-box">
+
+                    🔒
+                    <b>सुरक्षा सूचना:</b>
+
+                    आवेदन के लिए अपना Dhan password,
+                    OTP, UPI PIN, bank card details या
+                    किसी भी sensitive login information
+                    किसी व्यक्ति के साथ share न करें।
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Trading Executive Recruitment
+        </p>
+
+        <p>
+            Work From Home • केवल भारत के उम्मीदवारों के लिए
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
